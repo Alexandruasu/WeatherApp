@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo App - Weather Detail</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Current Weather Information</h1>
+        <% if (weather) { %>
+            <p>Temperature: <%= weather.temp_c %>°C (<%= weather.temp_f %>°F)</p>
+            <p>Feels Like: <%= weather.feelslike_c %>°C (<%= weather.feelslike_f %>°F)</p>
+            <div>
+                <img src="<%= weather.condition.icon %>" alt="Weather Condition">
+                <p>Condition: <%= weather.condition.text %></p>
+            </div>
+            <p>Wind Speed: <%= weather.wind_kph %> kph (<%= weather.wind_mph %> mph)</p>
+            <p>Wind Direction: <%= weather.wind_dir %> (<%= weather.wind_degree %>°)</p>
+            <p>Pressure: <%= weather.pressure_mb %> mb (<%= weather.pressure_in %> in)</p>
+            <p>Precipitation: <%= weather.precip_mm %> mm (<%= weather.precip_in %> in)</p>
+            <p>Humidity: <%= weather.humidity %>%</p>
+            <p>Cloud Cover: <%= weather.cloud %>%</p>
+            <p>UV Index: <%= weather.uv %></p>
+            <p>Wind Gust: <%= weather.gust_kph %> kph (<%= weather.gust_mph %> mph)</p>
+            <p><a href="/">Check another city</a></p>
+        <% } else { %>
+            <p>Weather data is not available.</p>
+        <% } %>
+    </div>
+</body>
+</html>

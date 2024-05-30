@@ -1,0 +1,140 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,223,1) 0%, rgba(0,212,255,1) 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.index{
+    text-align: center;
+    background-color: #004494;
+    padding:20px;
+    height: 150px;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    text-align: center;
+    background-color: #004494;
+    padding: 40px;
+    height: 550px;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    padding: 70px;
+    background-color: #0a409d;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+}
+  
+  .register-form {
+    padding: 85px;
+    background-color: #0a409d;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ a {
+    color: white;
+}
+
+.logout-button {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+}
+
+.btn-logout {
+    background-color: #0a409d; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-logout i {
+    margin-right: 8px; 
+}
+
+.btn-logout:hover {
+    background-color: #0a409d; 
+}
