@@ -1,11 +1,6 @@
 CREATE DATABASE IF NOT EXISTS METEO;
 USE METEO;
 
-
---
--- Table structure for table `users`
---
-
 DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
@@ -17,19 +12,11 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
---
--- Dumping data for table `users`
---
-
 LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` VALUES (1,'test','$2a$12$LjmUJdDJsw/BzPN2OGTHi.cdIgcpPeyvC11H0duT0nu1d3/pg7oOq'),(2,'test2','$2a$12$xlWF6OjFkpDHKn8CquVbR.m6UC2FkN.bL/0bxli5Mq7w9PcJKGGF2');
 
 UNLOCK TABLES;
-
---
--- Table structure for table `weather_data`
---
 
 DROP TABLE IF EXISTS `weather_data`;
 
@@ -62,12 +49,3 @@ CREATE TABLE `weather_data` (
   `date_recorded` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
---
--- Dumping data for table `weather_data`
---
-
-
--- Dump completed on 2024-05-23 17:29:50
-SELECT * FROM weather_data;
